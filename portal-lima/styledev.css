@@ -1,0 +1,453 @@
+html, body {
+    height: 100%;
+}
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+body {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    background-image: url(hardware.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(9, 16, 36);
+}
+
+.topo {
+    color: white;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+h1 {
+    justify-content: center;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+header {
+    background: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family:'Cormorant Garamond';
+}
+
+.logo {
+    display: flex;
+    align-content: space-between;
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+
+.logo > a {
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 5px;
+}
+
+.menu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.ancora:hover {
+	color: aquamarine;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main {
+    font-family: 'Poppins';
+    grid-column: 2/5;
+    background: aquamarine;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/*CSS FLEXBOX*/
+
+.intro {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro > div {
+    flex: 1 1 200px;
+}
+
+.intro p {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 30px;
+    margin-top: 15px;
+}
+
+.flex p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 32px;
+    color: black;
+}
+
+.txt-final {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+.icon-check {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+/*CSS GRID*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.grid-item {
+    display: grid;
+}
+
+.grid-item img {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+/*Para fazer a legenda ficar a frente da foto, com fundo escuro/transparente */
+.grid-item p {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
+.aside {
+    background: rgb(68, 68, 68);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: rgb(6, 16, 41);
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    height: 400px;   
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(9, 16, 36);
+}
+
+.card-titulo {
+    font-size: 30px;
+}
+
+.card-descricao {
+    margin: auto;
+    height: 150px;
+    font-size: 20px;
+}
+
+.btn-inscricao {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: rgb(9, 16, 36);
+    height: 50px;
+    padding: 10px;
+    margin: 5px auto;
+    font-size: 22px;
+    width: 80%;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(0, 255, 170);
+}
+
+.btn-inscricao:focus {
+    outline: none;
+}
+
+.card-btn > p {
+    padding: 15px;
+}
+
+.ml-titulo {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.menu-lateral1{
+    background: rgb(0, 0, 0);
+    font-family: 'Poppins';
+    padding: 10px;
+    margin: 15px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(9, 16, 36);
+}
+
+.ml-conteudo1 > li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    background: rgb(0, 255, 170);
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.hover-lateral:hover {
+    color: white;
+} 
+
+.info-card {
+    background: rgb(0, 0, 0);
+    font-family: 'Poppins';
+    padding: 10px;
+    margin: 15px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(9, 16, 36);
+}
+
+.titulo-info {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.info-redes > li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: flex-start;
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    height: auto;
+    margin-top: 15px;
+}
+
+.fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.fa-calendar-check-o {
+    color: white;
+    size: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: rgb(243, 64, 132);
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.info-conteudo > li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: flex-start;
+    color: white;
+    font-size: 18px;
+    text-align: start;
+    height: auto;
+    margin-top: 15px;
+}
+  
+.menu-lateral2{
+    background:rgb(9, 16, 36);
+    font-family: 'Poppins';
+    padding: 10px;
+    margin: 15px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(9, 16, 36);
+}
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(9, 16, 36);
+    height: 60px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgb(231, 231, 231);
+}
+
+.ml-conteudo2:focus {
+    outline: none;
+}
+
+.card-map {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    height: auto;   
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(9, 16, 36);
+}
+
+.iframe {
+    height: 340px;
+    margin: 4px;
+    margin-top: 15px;
+    width: 280px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: auto;
+    font-family:'Cormorant Garamond';
+}
+
+.copy {
+    padding: 10px;
+    color: white;
+}
+
+.menu-footer {
+    display: flex;
+    margin-right: 60px;
+}
+
+.menu-footer li {
+    margin-left: 5px;
+}
+
+.menu-footer li a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+

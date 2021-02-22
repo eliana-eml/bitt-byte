@@ -1,0 +1,253 @@
+html, body {
+    height: 100%;
+}
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+body {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    background-image: url(hardware.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(9, 16, 36);
+}
+
+p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    background: rgb(9, 16, 36);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family:'Cormorant Garamond';
+}
+
+.logo {
+    display: flex;
+    align-content: space-between;
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+
+.logo > a {
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+}
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 5px;
+}
+
+.menu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.ancora:hover {
+	color: aquamarine;
+}
+
+.main {
+    font-family: 'Poppins';
+    margin: 10px;
+    padding: 20px;
+    background: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    margin: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 6px rgb(124, 127, 134);
+    border-radius: 10px;
+    width: 400px;
+}
+
+.form .grupo{
+    position: relative;
+    margin: 40px;
+    margin-left: 25px;
+}
+
+input, textarea {
+    background: white;
+    color: grey;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(190, 207, 223);
+    
+}
+
+textarea {
+    font-family: 'Poppins';
+}
+
+/*Esse input: focus tira a borda preta ao redor da caixa de texto quando você seleciona ela, com o ouline: none*/
+input:focus {
+    outline: none;
+    color: grey;
+}
+
+textarea:focus {
+    outline: none;
+    color: grey;
+}
+/*Esse transition no label faz com que o texto padrão dentro da caixa de texto suba para cima de maneira mais 'lenta e visualmente bonita' para o usuario poder escrever dentro dela.*/
+label {
+    color: rgb(107, 106, 106);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+/*Esse input focus~label e valid~label servem para que quando o usuario digitar suas informações elas não sejam sobrepostas pelo que está escrito dentro da caixa de texto, então faz ela ir para cima e ficar fixada lá quando houver conteúdo dentro.*/
+input:focus~label, input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+/*Esse barra, barra::before e o input:focus~.barra::before servem para causar aquele efeito da barra azulzinha surgir quando o campo de texto é selecionado pelo usuario.*/
+.barra {
+    position: relative;
+    display: block;
+    width: 105%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: #2196f3;
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 102%;
+}
+
+.mensagem {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin-left: 5px;
+    color: rgb(107, 106, 106);
+}
+
+button {
+    font-family: 'Poppins';
+    background: rgb(23, 236, 165);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: auto;
+    font-family:'Cormorant Garamond';
+}
+
+.fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: rgb(243, 64, 132);
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.copy {
+    color: white;
+}
+
+.menu-footer {
+    display: flex;
+}
+
+.menu-footer li {
+    margin-left: 5px;
+}
+
+.menu-footer li a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
